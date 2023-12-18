@@ -23,10 +23,8 @@
                         <table class="table table-striped" id="table-1">
                             <thead>
                                 <tr class="text-center">
-                                    <th>NO</th>
-                                    <th>
-                                        Name
-                                    </th>
+                                    <th>Id</th>
+                                    <th>Name</th>
                                     <th>Type</th>
                                     <th>Weight</th>
                                 </tr>
@@ -34,7 +32,7 @@
                             <tbody>
                                 @foreach ($criterias as $criteria)
                                     <tr class="text-center">
-                                        <td>{{ $criteria->id }}</td>
+                                        <td>C{{ $criteria->id }}</td>
                                         <td>{{ $criteria->name }}</td>
                                         <td>{{ $criteria->type }}</td>
                                         <td>{{ $criteria->weight }}</td>

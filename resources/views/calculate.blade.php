@@ -47,7 +47,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Matriks Normalisasi  (Tren Positif, Tren Negatif)</h4>
+                    <h4>Pembentukan Matriks Normalisasi  (Tren Positif, Tren Negatif)</h4>
                     <div class="card-header-action">
                         <a data-collapse="#normalisasi" class="btn btn-icon btn-info" href="#"><i
                                 class="fas fa-minus"></i></a>
@@ -59,7 +59,7 @@
                             <table class="table table-striped table-bordered" id="table-1">
                                 <thead>
                                     <tr class="text-center">
-                                        <th></th>
+                                        <th>A/C</th>
                                         @foreach (array_keys(reset($normalisasi)) as $criteria)
                                             <th>C{{ $criteria }}</th>
                                         @endforeach
@@ -68,7 +68,7 @@
                                 <tbody>
                                     @foreach ($normalisasi as $alternative => $criteriaValues)
                                         <tr class="text-center">
-                                            <th>A{{ $alternative }}</th> <!-- Add 'a' here -->
+                                            <th>A{{ $alternative }}</th> 
                                             @foreach ($criteriaValues as $value)
                                                 <td>{{ $value }}</td>
                                             @endforeach
@@ -84,7 +84,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Matriks Pembobotan</h4>
+                    <h4>Perhitungan Nilai Indeks Alternatif</h4>
                     <div class="card-header-action">
                         <a data-collapse="#pembobotan" class="btn btn-icon btn-info" href="#"><i
                                 class="fas fa-minus"></i></a>
@@ -96,7 +96,7 @@
                             <table class="table table-striped table-bordered" id="table-1">
                                 <thead>
                                     <tr class="text-center">
-                                        <th></th>
+                                        <th>A/C</th>
                                         @foreach (array_keys(reset($weighting)) as $criteria)
                                             <th>C{{ $criteria }}</th>
                                         @endforeach
@@ -121,16 +121,16 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Perhitungan Composite Index dan Perangkingan Alternatif</h4>
+                    <h4>Perhitungan Nilai Indeks Gabungan dan Perangkingan Alternatif</h4>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered" id="table-1">
                             <thead>
                                 <tr class="text-center">
-                                    <th></th>
-                                    <th>SUM</th>
-                                    <th>RANKING</th>
+                                    <th>Nama</th>
+                                    <th>Nilai Indeks Gabungan</th>
+                                    <th>Ranking</th>
                                 </tr>
                             </thead>
                             <tbody>

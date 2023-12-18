@@ -26,7 +26,7 @@
 <body>
     <div id="app">
         <div class="main-wrapper">
-            <div class="navbar-bg"></div>
+            <div class="navbar-bg" style="background-color: #FF735C"></div>
             <nav class="navbar navbar-expand-lg main-navbar">
                 <form class="form-inline mr-auto">
                     <ul class="navbar-nav mr-3">
@@ -141,10 +141,10 @@
                     <div class="sidebar-brand">
                         {{-- <img src="{{ asset('/') }}assets/img/avatar/online-library.png" alt=""
                             width="35"> --}}
-                        <a href="index.html" class="" style="">CPI</a>
+                        <a href="index.html" class="" style="">PT. Cihuyy</a>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
-                        <a href="index.html">CPI</a>
+                        <a href="index.html"></a>
                     </div>
                     @include('layouts.sidebar')
                 </aside>
@@ -164,7 +164,7 @@
             </div>
             <footer class="main-footer">
                 <div class="text-center">
-                    Copyright &copy; 2023 <div class="bullet"></div> Composite Performance Index
+                    Copyright &copy; 2023 - Composite Performance Index for Suppliers
                 </div>
             </footer>
         </div>

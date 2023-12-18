@@ -13,16 +13,14 @@
                         <table class="table table-striped" id="table-1">
                             <thead>
                                 <tr class="text-center">
-                                    <th>NO</th>
-                                    <th>
-                                        Name
-                                    </th>
+                                    <th>id</th>
+                                    <th>Name</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($alternatifs as $alternatif)
                                     <tr class="text-center">
-                                        <td>{{ $alternatif->id }}</td>
+                                        <td>A{{ $alternatif->id }}</td>
                                         <td>{{ $alternatif->name }}</td>
                                     </tr>
                                 @endforeach

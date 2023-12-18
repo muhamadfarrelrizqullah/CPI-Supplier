@@ -13,20 +13,18 @@
                         <table class="table table-striped" id="table-1">
                             <thead>
                                 <tr class="text-center">
-                                    <th>NO</th>
-                                    <th>
-                                        Nama
-                                    </th>
+                                    <th>Id</th>
+                                    <th>Nama</th>
                                     <th>Nilai</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($alternatifs as $alternatif)
                                     <tr class="text-center">
-                                        <td>{{ $alternatif->id }}</td>
+                                        <td>A{{ $alternatif->id }}</td>
                                         <td>{{ $alternatif->name }}</td>
                                         <td>
-                                            <a href="/value/{{ $alternatif->id }}" class="text-warning mr-2"><i
+                                            <a href="/value/{{ $alternatif->id }}" class="text-info mr-2"><i
                                                     class="fas fa-edit" style="font-size: 20px"></i></a>
                                         </td>
                                     </tr>
