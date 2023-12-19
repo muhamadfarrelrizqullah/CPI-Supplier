@@ -5,11 +5,11 @@
 @section('page_name', 'Dashboard')
 
 @section('content')
-    <section id="hero" class="hero d-flex align-items-center section-bg text-dark">
+    <section id="hero" class="hero d-flex align-items-center section-bg text-dark" style="padding-top: 10px">
         <div class="container">
         <div class="row justify-content-between gy-5">
             <div class="col-lg-7 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-            <div class="row" style="text-align: left;">
+            <div class="row" style="text-align: left;"">
                 <div><h4><b>Metode CPI</b></h4>
                     <p>CPI (Cost Performance Index) adalah salah satu metode evaluasi kinerja yang digunakan dalam sistem pendukung pengambilan keputusan (SPK), khususnya dalam proyek manajemen. CPI digunakan untuk mengevaluasi efisiensi biaya dari suatu proyek atau kegiatan. Formula CPI dihitung dengan membandingkan biaya aktual yang dikeluarkan dengan biaya yang seharusnya dikeluarkan untuk mencapai tingkat kemajuan yang telah dicapai.</p>
                     <br/>

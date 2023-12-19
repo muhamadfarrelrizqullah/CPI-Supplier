@@ -28,11 +28,16 @@ Route::get('/', function () {
 //alternatif
 Route::get('/alternatifs', [alternatifController::class, 'index']);
 
+//aboutme
+Route::get('/about', function () {
+    return view('aboutme');
+});
+
 //criteria
 Route::get('/criterias', [criteriaController::class, 'index']);
 
 //nilai
-Route::get('/avalue', [AValueController::class, 'index']);
+Route::get('/altvalue', [AValueController::class, 'index']);
 Route::get('/value/{id}', [AValueController::class, 'showValue']);
 Route::put('/edit_value/{id}', [AValueController::class, 'edit']);
 

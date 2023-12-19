@@ -8,6 +8,7 @@ class CpiService
 {
     public function toArray($matrix)
     {
+        // to matrix
         foreach ($matrix as $m) {
             $result[$m->alternatif_id][$m->criteria_id] = $m->value;
         }
@@ -19,11 +20,13 @@ class CpiService
     {
         $type = [];
 
+        // get type
         foreach ($types as $t) {
             $type[$t->id] = $t->type;
         }
         $min = [];
 
+        // get min each criterias
         for ($i = 1; $i <= count($matrix[1]); $i++) {
             $min[$i] = 100;
             for ($j = 1; $j <= count($matrix); $j++) {
@@ -35,6 +38,7 @@ class CpiService
             }
         }
 
+        // normalize
         for ($i = 1; $i <= count($matrix[1]); $i++) {
             for ($j = 1; $j <= count($matrix); $j++) {
                 if ($type[$i] == 'Benefit') {
@@ -52,10 +56,12 @@ class CpiService
     {
         $weights = [];
 
+        // get weights each criterias
         foreach ($weight as $w) {
             $weights[$w->id] = $w->weight;
         }
 
+        // weighting
         for ($i = 1; $i <= count($matrix[1]); $i++) {
             for ($j = 1; $j <= count($matrix); $j++) {
                 $matrix[$j][$i] = round($matrix[$j][$i] * $weights[$i], 3);

@@ -29,7 +29,7 @@ class CpiController extends Controller
         $criterias = Criteria::all();
         $alternatifs = Alternatif::all();
 
-        // get matrix
+        //get matrix
         $array = $this->service->toArray($matriks);
 
         $type = DB::table('criterias')
@@ -37,10 +37,10 @@ class CpiController extends Controller
             ->get()
             ->toArray();
 
-        // normalize matrix
+        //normalize matrix
         $normalize = $this->service->normalize($array, $type);
 
-        //wwighting
+        //weighting
         $weight = DB::table('criterias')
             ->select('id', 'weight')
             ->get()
