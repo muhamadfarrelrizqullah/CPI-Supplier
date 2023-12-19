@@ -13,7 +13,7 @@
                         <table class="table table-striped" id="table-1">
                             <thead>
                                 <tr class="text-center">
-                                    <th>id</th>
+                                    <th>Id</th>
                                     <th>Name</th>
                                 </tr>
                             </thead>
